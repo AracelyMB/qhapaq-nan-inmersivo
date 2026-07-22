@@ -27,7 +27,7 @@ export default function Contact() {
   const openWhatsApp = () => {
     const text = encodeURIComponent("¡Hola Qhapaq Ñan Inmersivo! Estoy interesado en conocer más sobre sus experiencias de turismo tecnológico con realidad aumentada.");
     // Simulate real high converting WhatsApp redirect
-    window.open(`https://wa.me/51999999999?text=${text}`, "_blank");
+    window.open(`https://wa.me/593992414366?text=${text}`, "_blank");
   };
 
   return (
