@@ -1,0 +1,6 @@
+{
+  "name": "Qhapaq Ñan Inmersivo",
+  "description": "Explora el Qhapaq Ñan con realidad aumentada. Una plataforma moderna y responsive de turismo tecnológico que conecta la historia andina con la innovación digital.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
