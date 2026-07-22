@@ -2,6 +2,9 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ZoomIn, X, Compass, Eye, Smartphone, Sparkles } from "lucide-react";
 import { GalleryItem } from "../types";
+import templeImage from "../assets/images/ar_temple_reconstruction_1782746001623.jpg";
+import platformImage from "../assets/images/ar_gamified_platform_1782746019201.jpg";
+import trailImage from "../assets/images/qhapaq_nan_hero_bg_1782745984999.jpg";
 
 export default function Gallery() {
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
@@ -13,42 +16,42 @@ export default function Gallery() {
       id: "gal-1",
       title: "Reconstrucción del Templo",
       category: "Reconstrucciones 3D",
-      imageUrl: "/src/assets/images/ar_temple_reconstruction_1782746001623.jpg",
+      imageUrl: templeImage,
       description: "Holograma 3D de alta definición que reconstruye el antiguo Templo del Sol alineado perfectamente sobre las ruinas arqueológicas de piedra actuales."
     },
     {
       id: "gal-2",
       title: "Mapa Interactivo de Rutas",
       category: "Hologramas Digitales",
-      imageUrl: "/src/assets/images/ar_gamified_platform_1782746019201.jpg",
+      imageUrl: platformImage,
       description: "Mockup de la aplicación mostrando mapas topográficos offline en 3D de las rutas del Qhapaq Ñan con medallas y logros gamificados interactivos."
     },
     {
       id: "gal-3",
       title: "El Sendero del Qhapaq Ñan",
       category: "Paradas del Camino",
-      imageUrl: "/src/assets/images/qhapaq_nan_hero_bg_1782745984999.jpg",
+      imageUrl: trailImage,
       description: "Vista panorámica del Camino Inca empedrado original cruzando la cordillera andina, enriquecido con coordenadas digitales y señalética virtual."
     },
     {
       id: "gal-4",
-      title: "Santuario de Ollantaytambo",
+      title: "Baños del Inca Tambo",
       category: "Paradas del Camino",
-      imageUrl: "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?q=80&w=800&auto=format&fit=crop",
+      imageUrl: "https://share.google/dcycq4K6pflNJKeRc",
       description: "Exploración inmersiva en la fortaleza incaica de Ollantaytambo, donde la app reconstruye las puertas trapezoidales y defensas de piedra."
     },
     {
       id: "gal-5",
       title: "Medalla Física Coleccionable",
       category: "Medallas Físicas",
-      imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop",
+      imageUrl: "https://pin.it/4ziEqMOQP",
       description: "Medalla física real inspirada en la orfebrería imperial andina, otorgada a los caminantes que validan su paso por el sendero."
     },
     {
       id: "gal-6",
-      title: "Terrazas de Moray AR",
+      title: "Ruinas de Ingapirca",
       category: "Reconstrucciones 3D",
-      imageUrl: "https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=800&auto=format&fit=crop",
+      imageUrl: "https://pin.it/6vo8cbZkC",
       description: "Simulación holográfica de la temperatura e irrigación hidráulica incaica operando sobre los anfiteatros agrícolas circulares de Moray."
     }
   ];
