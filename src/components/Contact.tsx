@@ -77,7 +77,7 @@ export default function Contact() {
                 <div className="flex flex-col">
                   <span className="text-[10px] text-white/40 font-mono">SEDE PRINCIPAL</span>
                   <span className="text-sm font-semibold text-white">
-                    Cusco, Perú (Valle Sagrado)
+                    Cuenca, Ecuador 
                   </span>
                 </div>
               </div>
