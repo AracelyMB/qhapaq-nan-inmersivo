@@ -9,58 +9,58 @@ export default function Partners() {
   const alliances: Alliance[] = [
     {
       id: "muni-cusco",
-      name: "Municipalidad Provincial del Cusco",
+      name: "GAD Municipal de Cañar",
       type: "Municipio",
-      location: "Cusco, Perú",
+      location: "Cañar, Ecuador",
       description: "Convenio de digitalización de las escalinatas incas urbanas y del tramo arqueológico de Sacsayhuamán."
     },
     {
       id: "muni-urubamba",
-      name: "Municipalidad Distrital de Urubamba",
+      name: "GAD Municipal de Chunchi",
       type: "Municipio",
-      location: "Valle Sagrado, Perú",
+      location: "Chunchi, Ecuador",
       description: "Desarrollo de guías inmersivas para el tramo Ollantaytambo y mapeo GPS offline para senderistas locales."
     },
     {
       id: "muni-chinchero",
-      name: "Municipalidad de Chinchero",
+      name: "GAD Municipal de Cuenca ",
       type: "Municipio",
-      location: "Chinchero, Perú",
+      location: "Cuenca, Ecuador",
       description: "Colaboración en la reconstrucción AR de las terrazas agrícolas imperiales y el palacio de Túpac Yupanqui."
     },
     {
       id: "agency-andes",
-      name: "Andes Luxury Expeditions",
+      name: "Escalada y Montañismo Ecuador",
       type: "Agencia",
-      location: "Lima / Cusco",
+      location: " Ecuador ",
       description: "Integración de tours de Realidad Aumentada exclusivos para sus expediciones de alta gama por el Camino Inca."
     },
     {
       id: "agency-condor",
-      name: "Condor Travel Perú",
+      name: "Escala Ecusdor",
       type: "Agencia",
       location: "Internacional",
       description: "Provisión de licencias móviles corporativas para guiar a más de 5,000 turistas anuales en realidad virtual."
     },
     {
       id: "museum-larco",
-      name: "Museo Arqueológico Larco",
+      name: "Complejo Arqueológico y Museo Ingapirca ",
       type: "Museo",
-      location: "Lima, Perú",
+      location: "Cañar, Ecuador",
       description: "Desarrollo de tótems interactivos 3D y códigos QR en sala para escanear y expandir vasijas y textiles incas."
     },
     {
       id: "museum-map",
-      name: "Museo de Arte Precolombino (MAP)",
+      name: "Museo Pumapungo",
       type: "Museo",
-      location: "Cusco, Perú",
+      location: "Cuenca, Ecuador",
       description: "Sincronización de la app móvil con las exposiciones físicas de metalurgia imperial inca."
     },
     {
       id: "guia-agotur",
-      name: "Asociación de Guías Oficiales de Turismo (AGOTUR)",
+      name: "Asociación de Guías Oficiales de Turismo",
       type: "Guia",
-      location: "Cusco & Valle Sagrado",
+      location: "Ecuador",
       description: "Capacitación continua y entrega de medallas físicas para guías autorizados que lideran expediciones en la red vial."
     },
     {
