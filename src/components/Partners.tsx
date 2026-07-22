@@ -37,7 +37,7 @@ export default function Partners() {
     },
     {
       id: "agency-condor",
-      name: "Escala Ecusdor",
+      name: "Escala Ecuador",
       type: "Agencia",
       location: "Internacional",
       description: "Provisión de licencias móviles corporativas para guiar a más de 5,000 turistas anuales en realidad virtual."
