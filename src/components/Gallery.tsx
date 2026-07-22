@@ -5,7 +5,9 @@ import { GalleryItem } from "../types";
 import templeImage from "../assets/images/ar_temple_reconstruction_1782746001623.jpg";
 import platformImage from "../assets/images/ar_gamified_platform_1782746019201.jpg";
 import trailImage from "../assets/images/qhapaq_nan_hero_bg_1782745984999.jpg";
-
+import banosIncaImage from "../assets/images/banos-inca-tambo.jpeg";
+import medallaImage from "../assets/images/medalla-coleccionable.png";
+import ingapircaImage from "../assets/images/ruinas-ingapirca.jpeg";
 export default function Gallery() {
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>("All");
@@ -37,21 +39,21 @@ export default function Gallery() {
       id: "gal-4",
       title: "Baños del Inca Tambo",
       category: "Paradas del Camino",
-      imageUrl: "https://share.google/dcycq4K6pflNJKeRc",
+      imageUrl: banosIncaImage,
       description: "Exploración inmersiva en la fortaleza incaica de Ollantaytambo, donde la app reconstruye las puertas trapezoidales y defensas de piedra."
     },
     {
       id: "gal-5",
       title: "Medalla Física Coleccionable",
       category: "Medallas Físicas",
-      imageUrl: "https://pin.it/4ziEqMOQP",
+      imageUrl: medallaImage,
       description: "Medalla física real inspirada en la orfebrería imperial andina, otorgada a los caminantes que validan su paso por el sendero."
     },
     {
       id: "gal-6",
       title: "Ruinas de Ingapirca",
       category: "Reconstrucciones 3D",
-      imageUrl: "https://pin.it/6vo8cbZkC",
+      imageUrl: ingapircaImage,
       description: "Simulación holográfica de la temperatura e irrigación hidráulica incaica operando sobre los anfiteatros agrícolas circulares de Moray."
     }
   ];
