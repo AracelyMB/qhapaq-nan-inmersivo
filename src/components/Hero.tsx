@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, Compass, Eye, Shield, Cpu, Play, X, Volume2, Award, Map, Navigation, AlertCircle } from "lucide-react";
+import problemaImagen from "../assets/images/problema.png";
+import solucionImagen from "../assets/images/solucion.png";
+import funcionamientoImagen from "../assets/images/6paradas.jpeg";
+import trenVideo from "../assets/videos/tren.mp4";
 
 interface HeroProps {
   onDiscoverClick: () => void;
@@ -20,11 +24,12 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
       subtitle: "Recorrer el Qhapaq Ñan hoy es una experiencia pasiva, sin registro de tu logro.",
       description: "La gran red de caminos de piedra carece de guías presenciales constantes. La mayoría de los visitantes los recorre de forma pasiva, sin entender el profundo contexto arqueológico ni contar con un testimonio tangible de su esfuerzo.",
       visual: (
-        <div className="relative w-full h-full bg-neutral-950 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
-          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C2410C_1px,transparent_1px)] [background-size:16px_16px]"></div>
-          <AlertCircle className="w-16 h-16 text-terracotta-500 mb-4 animate-bounce" />
-          <p className="text-sm font-mono text-terracotta-400 uppercase tracking-widest mb-1">Exploración Silenciosa</p>
-          <p className="text-xs text-white/50 max-w-xs">Recorrer la ruta inca de forma pasiva limita el aprendizaje y la conexión emocional.</p>
+        <div className="relative w-full h-full bg-neutral-950 overflow-hidden">
+          <img
+            src={problemaImagen}
+            alt="Problema al recorrer el Qhapaq Ñan"
+            className="w-full h-full object-contain"
+          />
         </div>
       )
     },
@@ -33,11 +38,12 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
       subtitle: "QhapaqRoute convierte cada parada en un hito: una medalla física y su versión holográfica en la app.",
       description: "Fusionamos la geolocalización satelital inteligente y la realidad aumentada interactiva con una recompensa material. Desbloquea hologramas 3D del Imperio Inca e interconecta tus logros con medallas reales de colección.",
       visual: (
-        <div className="relative w-full h-full bg-neutral-950 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-tr from-incagold-500/10 to-transparent"></div>
-          <Award className="w-16 h-16 text-incagold-500 mb-4 animate-pulse" />
-          <p className="text-sm font-mono text-incagold-400 uppercase tracking-widest mb-1">Medallas Físicas y Digitales</p>
-          <p className="text-xs text-white/50 max-w-xs">Hologramas 3D inmersivos emparejados con hermosas medallas de metal coleccionables.</p>
+        <div className="relative w-full h-full bg-neutral-950 overflow-hidden">
+          <img
+            src={solucionImagen}
+            alt="Solución QhapaqRoute"
+            className="w-full h-full object-contain"
+          />
         </div>
       )
     },
@@ -46,11 +52,12 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
       subtitle: "Descarga, GPS valida tu llegada offline, colecciona y desbloquea.",
       description: "Simple y sin fricciones: descargas el mapa andino offline, caminas el sendero libremente, el GPS valida automáticamente tu arribo al hito, y desbloqueas al instante tu medalla digital y física.",
       visual: (
-        <div className="relative w-full h-full bg-neutral-950 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-andean-grid"></div>
-          <Cpu className="w-16 h-16 text-techblue-400 mb-4 animate-spin-slow" />
-          <p className="text-sm font-mono text-techblue-400 uppercase tracking-widest mb-1">Validación GPS Offline</p>
-          <p className="text-xs text-white/50 max-w-xs">El motor satelital autónomo detecta tu llegada sin necesidad de cobertura de datos.</p>
+        <div className="relative w-full h-full bg-neutral-950 overflow-hidden">
+          <img
+            src={funcionamientoImagen}
+            alt="Funcionamiento de QhapaqRoute"
+            className="w-full h-full object-contain"
+          />
         </div>
       )
     },
@@ -59,11 +66,15 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
       subtitle: "Completa el mapa. Vive el camino inca como nunca antes.",
       description: "Arma el rompecabezas tridimensional del camino incaico andino en el mundo real. Inmortaliza tu hazaña con un recuerdo eterno, tangible e inmersivo de tu conexión con la historia prehispánica.",
       visual: (
-        <div className="relative w-full h-full bg-neutral-950 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
-          <div className="absolute inset-0 opacity-10 bg-andean-grid"></div>
-          <Map className="w-16 h-16 text-emerald-400 mb-4" />
-          <p className="text-sm font-mono text-emerald-400 uppercase tracking-widest mb-1">Mapa Andino Completo</p>
-          <p className="text-xs text-white/50 max-w-xs">Tu hazaña materializada y sellada para siempre en la historia de la ruta.</p>
+        <div className="relative w-full h-full bg-neutral-950 overflow-hidden">
+          <video
+            src={trenVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
         </div>
       )
     }
