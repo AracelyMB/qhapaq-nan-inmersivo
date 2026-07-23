@@ -8,7 +8,7 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Paso 1: Descarga la app",
+      title: "Paso 1: Registrate en la Web",
       description: "Registro simple y sin fricción. Configura tu perfil en segundos y descarga la cartografía completa del Qhapaq Ñan para usar en modo offline.",
       icon: Smartphone,
       color: "text-terracotta-500",
@@ -18,7 +18,7 @@ export default function HowItWorks() {
     {
       number: 2,
       title: "Paso 2: Explora la ruta",
-      description: "Camina libremente. El motor GPS de la app valida de forma automática y precisa tu llegada a cada hito patrimonial sin depender de conectividad.",
+      description: "Camina libremente. El motor GPS de la Web valida de forma automática y precisa tu llegada a cada hito patrimonial sin depender de conectividad.",
       icon: MapPin,
       color: "text-incagold-500",
       bg: "bg-incagold-500/10",
