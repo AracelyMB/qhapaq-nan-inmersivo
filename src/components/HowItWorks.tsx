@@ -8,7 +8,7 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Paso 1: Descarga la app",
+      title: "Paso 1: Registrate en la Web",
       description: "Registro simple y sin fricción. Configura tu perfil en segundos y descarga la cartografía completa del Qhapaq Ñan para usar en modo offline.",
       icon: Smartphone,
       color: "text-terracotta-500",
@@ -18,7 +18,7 @@ export default function HowItWorks() {
     {
       number: 2,
       title: "Paso 2: Explora la ruta",
-      description: "Camina libremente. El motor GPS de la app valida de forma automática y precisa tu llegada a cada hito patrimonial sin depender de conectividad.",
+      description: "Camina libremente. El motor GPS de la Web valida de forma automática y precisa tu llegada a cada hito patrimonial sin depender de conectividad.",
       icon: MapPin,
       color: "text-incagold-500",
       bg: "bg-incagold-500/10",
@@ -144,7 +144,7 @@ export default function HowItWorks() {
                         <div className="space-y-1">
                           <h4 className="text-sm font-bold text-white">Ruta Imperial Incas</h4>
                           <p className="text-[10px] text-andean-50/60 font-light max-w-[200px]">
-                            Descargando modelos 3D del tramo Ollantaytambo a Machu Picchu.
+                            Descargando modelos 3D del tramo Baños del Inca El Tambo Ecuador.
                           </p>
                         </div>
                         <div className="w-40 bg-neutral-800 h-2 rounded-full overflow-hidden">
@@ -235,7 +235,7 @@ export default function HowItWorks() {
 
                           <div className="absolute bottom-2 inset-x-2 bg-black/60 backdrop-blur-md p-2 rounded-lg border border-white/10 text-center">
                             <span className="font-mono text-[8px] text-incagold-400 block font-semibold">MEDALLA DESBLOQUEADA</span>
-                            <span className="text-[9px] text-white font-medium block">Holograma: Templo de Chinchero</span>
+                            <span className="text-[9px] text-white font-medium block">Holograma: Templo de Ingapirca</span>
                           </div>
                         </div>
 

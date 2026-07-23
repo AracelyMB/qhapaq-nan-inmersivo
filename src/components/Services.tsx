@@ -27,8 +27,8 @@ export default function Services() {
     {
       id: "platform",
       title: "Plataforma Digital",
-      shortDesc: "App con validación GPS para el turista independiente, funcionando como un guía inteligente sin necesidad de guía humano.",
-      longDesc: "Perfecto para el viajero autosuficiente. La app utiliza el GPS del smartphone para detectar la llegada a cada hito patrimonial, desbloqueando automáticamente contenidos y validando el avance sin requerir de conexión a internet constante ni de un guía físico.",
+      shortDesc: "Validación GPS para el turista independiente, funcionando como un guía inteligente sin necesidad de guía humano.",
+      longDesc: "Perfecto para el viajero autosuficiente. La Web utiliza el GPS del smartphone para detectar la llegada a cada hito patrimonial, desbloqueando automáticamente contenidos y validando el avance sin requerir de conexión a internet constante ni de un guía físico.",
       icon: Smartphone,
       color: "from-techblue-500 to-techblue-600",
       textColor: "text-techblue-500",
@@ -45,8 +45,8 @@ export default function Services() {
     {
       id: "gamification",
       title: "Gamificación Cultural",
-      shortDesc: "Sistema de 6 medallas físicas coleccionables y hologramas digitales desbloqueables en la app que arman el mapa andino.",
-      longDesc: "Transformamos el senderismo histórico en una gesta personal de colección. Al llegar a cada hito, validas tu GPS para desbloquear medallas digitales holográficas en 3D en la app, las cuales corresponden a hermosas medallas físicas de metal coleccionables que arman un mapa completo del camino andino.",
+      shortDesc: "Sistema de 6 medallas físicas coleccionables y hologramas digitales desbloqueables en la pagina Web que arman el mapa andino.",
+      longDesc: "Transformamos el senderismo histórico en una gesta personal de colección. Al llegar a cada hito, validas tu GPS para desbloquear medallas digitales holográficas en 3D, las cuales corresponden a hermosas medallas físicas de metal coleccionables que arman un mapa completo del camino andino.",
       icon: Trophy,
       color: "from-incagold-500 to-incagold-600",
       textColor: "text-incagold-500",
@@ -54,7 +54,7 @@ export default function Services() {
       borderColor: "border-incagold-500/20",
       details: [
         "6 medallas de metal coleccionables de edición limitada.",
-        "Colección holográfica digital desbloqueable en la app.",
+        "Colección holográfica digital desbloqueable en la Web.",
         "Búsqueda del tesoro con retos y trivias históricas.",
         "Tu hazaña materializada en un mapa rompecabezas real."
       ],
