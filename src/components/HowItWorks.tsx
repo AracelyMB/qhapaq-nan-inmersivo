@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Smartphone, MapPin, Eye, Compass, Trophy, WifiOff, Sparkles, Download, ArrowRight } from "lucide-react";
+import registroImagen from "../assets/images/registro-web.png";
+import medallaImagen from "../assets/images/medalla-desbloqueada.png";
 
 export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(1);
@@ -8,8 +10,8 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Paso 1: Registrate en la Web",
-      description: "Registro simple y sin fricción. Configura tu perfil en segundos y descarga la cartografía completa del Qhapaq Ñan para usar en modo offline.",
+      title: "Paso 1: Regístrate en la web",
+      description: "Crea tu cuenta, registra tus datos y configura tu perfil para comenzar a guardar tus recorridos y medallas.",
       icon: Smartphone,
       color: "text-terracotta-500",
       bg: "bg-terracotta-500/10",
@@ -18,7 +20,7 @@ export default function HowItWorks() {
     {
       number: 2,
       title: "Paso 2: Explora la ruta",
-      description: "Camina libremente. El motor GPS de la Web valida de forma automática y precisa tu llegada a cada hito patrimonial sin depender de conectividad.",
+      ddescription:"Recorre la ruta y registra tus paradas en la web para conservar el avance de tu experiencia.",
       icon: MapPin,
       color: "text-incagold-500",
       bg: "bg-incagold-500/10",
@@ -129,33 +131,32 @@ export default function HowItWorks() {
                 <div className="flex-1 overflow-hidden relative">
                   <AnimatePresence mode="wait">
                     
-                    {/* Screen 1: Download */}
+                    {/* Screen 1: Registro web */}
                     {activeStep === 1 && (
                       <motion.div
-                        key="screen-dl"
+                        key="screen-register"
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
-                        className="absolute inset-0 p-4 flex flex-col justify-center items-center text-center space-y-4"
+                        className="absolute inset-0 p-3"
                       >
-                        <div className="w-16 h-16 rounded-full bg-terracotta-500/20 flex items-center justify-center border border-terracotta-500/35">
-                          <Download className="w-8 h-8 text-terracotta-500 animate-bounce" />
+                        <div className="relative w-full h-full rounded-2xl overflow-hidden border border-terracotta-500/30 bg-black">
+                          <img
+                            src={registroImagen}
+                            alt="Registro de usuario en QhapaqRoute"
+                            className="w-full h-full object-contain"
+                          />
+
+                          <div className="absolute inset-x-2 bottom-2 bg-black/70 backdrop-blur-md p-2 rounded-lg border border-white/10 text-center">
+                            <span className="font-mono text-[8px] text-terracotta-400 block font-semibold uppercase">
+                              Paso 1
+                            </span>
+
+                            <span className="text-[9px] text-white font-medium block">
+                              Regístrate y crea tu perfil
+                            </span>
+                          </div>
                         </div>
-                        <div className="space-y-1">
-                          <h4 className="text-sm font-bold text-white">Ruta Imperial Incas</h4>
-                          <p className="text-[10px] text-andean-50/60 font-light max-w-[200px]">
-                            Descargando modelos 3D del tramo Baños del Inca El Tambo Ecuador.
-                          </p>
-                        </div>
-                        <div className="w-40 bg-neutral-800 h-2 rounded-full overflow-hidden">
-                          <motion.div
-                            initial={{ width: 0 }}
-                            animate={{ width: "82%" }}
-                            transition={{ duration: 2, ease: "easeInOut" }}
-                            className="bg-gradient-to-r from-terracotta-500 to-incagold-500 h-full"
-                          ></motion.div>
-                        </div>
-                        <span className="text-[10px] font-mono text-incagold-400 font-semibold">82% - 150 MB / 180 MB</span>
                       </motion.div>
                     )}
 
@@ -202,46 +203,47 @@ export default function HowItWorks() {
                       </motion.div>
                     )}
 
-                    {/* Screen 3: AR */}
-                    {activeStep === 3 && (
+                   {/* Screen 3: Medalla desbloqueada */}
+                   {activeStep === 3 && (
                       <motion.div
-                        key="screen-ar"
+                        key="screen-reward"
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
-                        className="absolute inset-0 p-3 flex flex-col justify-between"
+                        className="absolute inset-0 p-3 flex flex-col"
                       >
-                        {/* Camera viewport simulation */}
-                        <div className="flex-1 rounded-2xl border border-techblue-500/30 relative overflow-hidden bg-gradient-to-t from-black/80 to-transparent">
-                          
-                          {/* Neon hud lines */}
+                        <div className="relative flex-1 rounded-2xl overflow-hidden border border-techblue-500/30 bg-black">
+                          <img
+                            src={medallaImagen}
+                            alt="Medalla digital desbloqueada en QhapaqRoute"
+                            className="w-full h-full object-contain"
+                          />
+
+                          {/* Esquinas estilo realidad aumentada */}
                           <div className="absolute top-2 left-2 w-3 h-3 border-t border-l border-techblue-400"></div>
                           <div className="absolute top-2 right-2 w-3 h-3 border-t border-r border-techblue-400"></div>
                           <div className="absolute bottom-2 left-2 w-3 h-3 border-b border-l border-techblue-400"></div>
                           <div className="absolute bottom-2 right-2 w-3 h-3 border-b border-r border-techblue-400"></div>
 
-                          {/* 3D Wireframe structure floating */}
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <motion.div
-                              animate={{ scale: [1, 1.02, 1] }}
-                              transition={{ duration: 3, repeat: Infinity }}
-                              className="w-28 h-20 border border-incagold-500/40 relative flex items-center justify-center"
-                            >
-                              <div className="absolute inset-0 border border-dashed border-incagold-500/20 transform rotate-12"></div>
-                              <div className="absolute top-0 inset-x-0 h-[1px] bg-incagold-500/50"></div>
-                              <Sparkles className="w-5 h-5 text-incagold-400 animate-pulse" />
-                            </motion.div>
-                          </div>
+                          <div className="absolute inset-x-2 bottom-2 bg-black/70 backdrop-blur-md p-2 rounded-lg border border-white/10 text-center">
+                            <span className="font-mono text-[8px] text-incagold-400 block font-semibold">
+                              MEDALLA DESBLOQUEADA
+                            </span>
 
-                          <div className="absolute bottom-2 inset-x-2 bg-black/60 backdrop-blur-md p-2 rounded-lg border border-white/10 text-center">
-                            <span className="font-mono text-[8px] text-incagold-400 block font-semibold">MEDALLA DESBLOQUEADA</span>
-                            <span className="text-[9px] text-white font-medium block">Holograma: Templo de Ingapirca</span>
+                            <span className="text-[9px] text-white font-medium block">
+                              Recompensa obtenida en la ruta
+                            </span>
                           </div>
                         </div>
 
                         <div className="mt-2 bg-andean-900/90 p-2.5 rounded-xl border border-andean-500/20 flex items-center justify-between">
-                          <span className="text-[9px] text-andean-50/60 font-mono">Registro Colección</span>
-                          <span className="text-[9px] text-incagold-400 font-bold font-mono">Medalla 01/06</span>
+                          <span className="text-[9px] text-andean-50/60 font-mono">
+                            Registro colección
+                          </span>
+
+                          <span className="text-[9px] text-incagold-400 font-bold font-mono">
+                            Medalla 01/06
+                          </span>
                         </div>
                       </motion.div>
                     )}
