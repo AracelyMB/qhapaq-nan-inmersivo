@@ -5,7 +5,7 @@ import problemaImagen from "../assets/images/problema.png";
 import solucionImagen from "../assets/images/solucion.png";
 import funcionamientoImagen from "../assets/images/6paradas.jpeg";
 import trenVideo from "../assets/videos/tren.mp4";
-
+import logoFondo from "../assets/images/logo.png";
 interface HeroProps {
   onDiscoverClick: () => void;
 }
@@ -113,21 +113,11 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
       className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden"
     >
       {/* Background Container with Video and Image fallback */}
-      <div className="absolute inset-0 z-0">
-        <video
-          src="https://assets.mixkit.co/videos/preview/mixkit-machu-picchu-ancient-ruins-under-clouds-34135-large.mp4"
-          loop
-          muted
-          autoPlay
-          playsInline
-          className="w-full h-full object-cover object-center scale-105 select-none opacity-35"
-        />
-        <div className="absolute inset-0 z-[-1] bg-neutral-950">
+        <div className="absolute inset-0 z-0">
           <img
-            src={heroBgPath}
-            alt="Qhapaq Ñan - Camino Inca con Realidad Aumentada"
-            className="w-full h-full object-cover object-center scale-105 select-none opacity-40"
-            referrerPolicy="no-referrer"
+            src={logoFondo}
+            alt="QhapaqRoute"
+            className="w-full h-full object-cover object-center scale-105 select-none opacity-35"
           />
         </div>
         {/* Apple-style gradient overlays to blend into the dark layout */}
@@ -137,7 +127,7 @@ export default function Hero({ onDiscoverClick }: HeroProps) {
         {/* Subtle glowing mesh of light */}
         <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-incagold-500/10 rounded-full blur-[120px] pointer-events-none"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-techblue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-      </div>
+    
 
       {/* Main Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
